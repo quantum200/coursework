@@ -1,0 +1,20 @@
+﻿# railway.toml
+version = 1
+
+[[services]]
+  internal_port = 80
+  protocol = "tcp"
+
+  [services.concurrency]
+    web = 1
+
+  [services.env]
+    RAILWAY = "1"
+
+    # Здесь ты можешь указать любые переменные среды, необходимые для работы твоего API
+    # Например, ты можешь указать настройки для подключения к PostgreSQL
+    POSTGRES_HOST = "viaduct.proxy.rlwy.net"
+    POSTGRES_PORT = "26628"
+    POSTGRES_USER = "postgres"
+    POSTGRES_PASSWORD = "SzLHJMnUXIaNXzxpSJrXPdSURgMOnHBd"
+    POSTGRES_DB = "railway"

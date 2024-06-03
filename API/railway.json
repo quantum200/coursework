@@ -1,0 +1,8 @@
+﻿{
+  "build": {
+    "builder": "heroku/buildpacks:20"
+  },
+  "deploy": {
+    "startCommand": "dotnet run --project /path/to/your/project/FootballWebAPI"
+  }
+}
